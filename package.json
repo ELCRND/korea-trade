@@ -1,0 +1,21 @@
+{
+  "name": "korea-trade",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.4",
+    "cssnano": "^9.0.2",
+    "postcss": "^8.5.26",
+    "postcss-preset-env": "^11.5.1",
+    "sass": "^1.103.1",
+    "sharp": "^0.35.4",
+    "terser": "^5.51.2",
+    "vite": "^8.2.2"
+  }
+}

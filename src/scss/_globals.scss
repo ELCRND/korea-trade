@@ -1,0 +1,108 @@
+@use "helpers" as *;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  // outline: 2px solid green;
+}
+
+html {
+  font-size: vw(16px, 1440);
+
+  @include tablet {
+    font-size: vw(18px, 1440);
+  }
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  background: #fff;
+  color: var(--color-gray);
+  position: relative;
+  line-height: 140%;
+
+  &:has(.sort-dropdown__details[open]) {
+    overflow: hidden;
+  }
+
+  // &::-webkit-scrollbar-thumb {
+  //   background: linear-gradient(0deg, #19a74b 77%, #8bdaa2);
+  //   border-radius: rem(16);
+  // }
+
+  // &::-webkit-scrollbar {
+  //   width: rem(8);
+  // }
+}
+
+p {
+  line-height: 140%;
+}
+
+main {
+  overflow-x: hidden;
+  flex-grow: 1;
+}
+
+a,
+button,
+label,
+input,
+details,
+summary,
+textarea,
+select,
+svg,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+:focus-visible {
+  outline: none;
+}
+
+img {
+  width: 100%;
+}
+
+*:focus-visible {
+  outline: rem(2) solid var(--color-green--light) !important;
+  outline-offset: rem(4);
+}
+
+[data-wave] {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  border-radius: 50%;
+  // opacity: 0.6;
+  transform: scale(0);
+  animation: wave-animation 1s ease-out forwards;
+  pointer-events: none;
+  z-index: 10;
+  mix-blend-mode: overlay;
+}
+
+@keyframes wave-animation {
+  to {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}

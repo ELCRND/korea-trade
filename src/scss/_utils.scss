@@ -1,0 +1,44 @@
+@use "helpers" as *;
+
+.u-container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.u-title--section {
+  font-weight: 800;
+  font-size: rem(34);
+  line-height: 129%;
+  letter-spacing: -0.06em;
+  color: var(--color-black);
+
+  @include mobile {
+    font-size: rem(26);
+  }
+}
+
+.u-btn--regular {
+  @include flex-center;
+  border-radius: rem(10);
+  box-shadow: 0 rem(8) rem(18) 0 rgba(22, 136, 61, 0.25);
+  background: var(--color-green);
+  font-weight: 600;
+  font-size: rem(15);
+  color: var(--color-white);
+
+  &:active {
+    translate: 0 rem(4);
+    scale: 0.98 1;
+    box-shadow: 0 rem(12) rem(22) 0 rgba(22, 136, 61, 0.25);
+  }
+}
+
+.u-btn--second {
+}
+
+.u-text--accent {
+}
+
+.u-section--head {
+}

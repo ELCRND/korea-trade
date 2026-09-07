@@ -1,0 +1,19 @@
+@use "helpers" as *;
+
+:root {
+  --color-white: #fff;
+  --color-black: #020a10;
+  --color-black--light: #132018;
+  --color-gray: #53615a;
+  --color-gray--light: #66736b;
+  --color-green: #16883d;
+  --color-green--light: #e9f5ec;
+
+  --font-family: "Manrope", sans-serif;
+  --second-family: "Inter", sans-serif;
+
+  --container-width: #{rem(1344)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+}

@@ -1,0 +1,137 @@
+@use "@/scss/helpers" as *;
+
+.hero {
+    padding-block: rem(72) rem(60);
+    background: linear-gradient(90deg, #fff 0%, #eaf5ec 50% 100%);
+
+    &__container {
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__text {
+        flex: 0 1 53.1%;
+        display: flex;
+        flex-direction: column;
+        gap: rem(18);
+    }
+
+    &__breadcrumbs {
+        font-weight: 500;
+        font-size: rem(12);
+        color: #718078;
+
+        ol {
+            display: flex;
+
+            li {
+                &:not(:last-child)::after {
+                    content: " / ";
+                }
+
+                a {
+                    &:hover {
+                        color: var(--color-green);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    &__title {
+        max-width: 20ch;
+        font-weight: 800;
+        font-size: rem(48);
+        line-height: 112%;
+        letter-spacing: -0.04em;
+        color: var(--color-black);
+    }
+
+    &__description {
+        max-width: 60ch;
+        line-height: 156%;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    &__action {
+        width: rem(240);
+        height: rem(54);
+        margin-top: auto;
+    }
+
+    &__image {
+        flex: 0 1 46.9%;
+        border-radius: rem(18);
+        box-shadow: rem(-4) rem(10) rem(22) 0 rgba(5, 31, 15, 0.22);
+
+        picture {
+            width: rem(630);
+            border-radius: rem(18);
+            overflow: hidden;
+        }
+    }
+}
+
+@include mobile {
+    .hero {
+        padding-block: rem(64) rem(32);
+        background: linear-gradient(90deg, #fff 0%, #f8fff9 50% 100%);
+
+        &__container {
+        }
+
+        &__content {
+            flex-direction: column;
+            gap: rem(18);
+        }
+
+        &__text {
+            flex: auto;
+        }
+
+        &__breadcrumbs {
+            font-size: rem(11);
+            line-height: 145%;
+
+            ol {
+                li {
+                    &:not(:last-child)::after {
+                    }
+
+                    a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+
+        &__title {
+            font-size: rem(32);
+            line-height: 120%;
+        }
+
+        &__description {
+            font-size: rem(14);
+        }
+
+        &__action {
+            width: 100%;
+            height: rem(50);
+            margin-top: 0;
+        }
+
+        &__image {
+            // flex: auto;
+            border-radius: rem(16);
+            box-shadow: 0 10px 24px 0 rgba(5, 31, 15, 0.1);
+
+            picture {
+                width: 100%;
+            }
+        }
+    }
+}
