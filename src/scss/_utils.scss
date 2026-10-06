@@ -35,6 +35,19 @@
 }
 
 .u-btn--second {
+  padding: rem(15) rem(35);
+  border-radius: rem(142);
+  background: #fff;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: rem(15);
+  line-height: 120%;
+  color: #00368c;
+
+  &:active {
+    translate: 0 rem(4);
+    scale: 0.98 1;
+  }
 }
 
 .u-text--accent {

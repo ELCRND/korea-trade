@@ -17,7 +17,129 @@
 
 <body>
 
-  <header></header>
+  <header class="header">
+    <div class="header__container u-container">
+
+      <a
+        href="./#header"
+        class="header__logo"
+      >
+        <img
+          src="/images/common/logo--black.avif"
+          alt="SOME BY MI"
+          width="155"
+          height="35"
+          loading="eager"
+          fetchpriority="high"
+        >
+      </a>
+
+      <div class="header-menu">
+
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item"><a
+                href="./#catalog"
+                class="header__navigation-link"
+              >Каталог
+              </a>
+            </li>
+            <li class="header__navigation-item"><a
+                href="./#lines"
+                class="header__navigation-link"
+              >Бренды
+              </a>
+            </li>
+            <li class="header__navigation-item"><a
+                href="./#about"
+                class="header__navigation-link"
+              >О нас
+              </a>
+            </li>
+            <li class="header__navigation-item"><a
+                href="./#features"
+                class="header__navigation-link"
+              >Сервис
+              </a>
+            </li>
+            <li class="header__navigation-item"><a
+                href="./#faq"
+                class="header__navigation-link"
+              >Доставка и оплата
+              </a>
+            </li>
+            <li class="header__navigation-item"><a
+                href="./#footer"
+                class="header__navigation-link"
+              >Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="./#header"
+          class="header__phone"
+        >
+          8 (800) 500-67-27
+        </a>
+
+        <button
+          type="button"
+          class="header__action"
+        >
+          ПОЛУЧИТЬ ПРАЙС
+        </button>
+
+      </div>
+
+      <div class="header__search">
+        <label
+          for="search-checkbox"
+          class="header__search-action"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.79758 0.975098C7.45315 0.975098 6.1389 1.359 5.02105 2.07827C3.90319 2.79753 3.03193 3.81985 2.51744 5.01594C2.00295 6.21203 1.86833 7.52817 2.13062 8.79794C2.3929 10.0677 3.04031 11.2341 3.99097 12.1495C4.94163 13.0649 6.15284 13.6884 7.47144 13.941C8.79004 14.1935 10.1568 14.0639 11.3989 13.5685C12.641 13.073 13.7026 12.234 14.4496 11.1576C15.1965 10.0811 15.5952 8.81555 15.5952 7.52091C15.595 5.78489 14.8788 4.12 13.6041 2.89244C12.3293 1.66489 10.6004 0.975208 8.79758 0.975098Z"
+              stroke="#020A10"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M13.8711 12.4043L17 15.4751"
+              stroke="#020A10"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+            />
+          </svg>
+        </label>
+        <input
+          type="checkbox"
+          name="search-checkbox"
+          id="search-checkbox"
+          class="header__search-checkbox"
+        >
+        <div class="header__search-wrapper">
+          <div class="header__search-field">
+            <input
+              type="search"
+              class="header__search-input"
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="header-menu-open">
+        <span></span><span></span><span></span>
+      </div>
+
+    </div>
+  </header>
 
   <main>
     <!-- HERO -->
@@ -59,7 +181,7 @@
           <div class="hero__image">
             <picture>
               <img
-                src="images/some-by-mi/hero/hero-bg.avif"
+                src="/images/some-by-mi/hero/hero-bg.avif"
                 alt="Косметика SOME BY MI"
                 width="630"
                 height="400"
@@ -73,7 +195,10 @@
     </section>
 
     <!-- FEATURES -->
-    <section class="features">
+    <section
+      class="features"
+      id="features"
+    >
       <div class="features__container u-container">
         <ul class="features__list">
           <li
@@ -242,7 +367,7 @@
             <article class="lines-item">
               <picture class="lines-item__image">
                 <img
-                  src="images/some-by-mi/lines/AHA·BHA·PHA 30 Days Miracle.avif"
+                  src="/images/some-by-mi/lines/AHA·BHA·PHA 30 Days Miracle.avif"
                   alt="AHA·BHA·PHA 30 Days Miracle"
                   width="180"
                   height="196"
@@ -274,7 +399,7 @@
             <article class="lines-item">
               <picture class="lines-item__image">
                 <img
-                  src="images/some-by-mi/lines/Beta Panthenol.avif"
+                  src="/images/some-by-mi/lines/Beta Panthenol.avif"
                   alt="Beta Panthenol"
                   width="180"
                   height="196"
@@ -306,7 +431,7 @@
             <article class="lines-item">
               <picture class="lines-item__image">
                 <img
-                  src="images/some-by-mi/lines/Retinol Intense.avif"
+                  src="/images/some-by-mi/lines/Retinol Intense.avif"
                   alt="Retinol Intense"
                   width="180"
                   height="196"
@@ -338,7 +463,7 @@
             <article class="lines-item">
               <picture class="lines-item__image">
                 <img
-                  src="images/some-by-mi/lines/Snail Truecica.avif"
+                  src="/images/some-by-mi/lines/Snail Truecica.avif"
                   alt="Snail Truecica"
                   width="180"
                   height="196"
@@ -370,7 +495,7 @@
             <article class="lines-item">
               <picture class="lines-item__image">
                 <img
-                  src="images/some-by-mi/lines/Yuja Niacin.avif"
+                  src="/images/some-by-mi/lines/Yuja Niacin.avif"
                   alt="Yuja Niacin"
                   width="180"
                   height="196"
@@ -402,7 +527,7 @@
             <article class="lines-item">
               <picture class="lines-item__image">
                 <img
-                  src="images/some-by-mi/lines/Galactomyces.avif"
+                  src="/images/some-by-mi/lines/Galactomyces.avif"
                   alt="Galactomyces"
                   width="180"
                   height="196"
@@ -431,7 +556,10 @@
     </section>
 
     <!-- CATALOG -->
-    <div class="catalog">
+    <section
+      class="catalog"
+      id="catalog"
+    >
       <div class="u-container">
 
         <h2 class="catalog__title u-title--section">
@@ -1094,8 +1222,849 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section
+      class="about"
+      id="about"
+    >
+      <div class="about__container u-container">
+        <div class="about__wrapper">
+          <picture class="about__image">
+            <img
+              src="/images/some-by-mi/about/about-image.avif"
+              alt="О бренде SOME BY MI"
+              width="840"
+              height="501"
+              loading="lazy"
+              draggable="false"
+              decoding="async"
+            >
+          </picture>
+
+          <div class="about__text">
+            <h2 class="about__title u-title--section">
+              О бренде SOME BY MI
+            </h2>
+            <ul class="about__list">
+              <!-- 1 -->
+              <li class="about__list-item">
+                <div class="about-feature">
+                  <picture
+                    class="about-feature__icon"
+                    data-wave
+                  >
+                    <img
+                      src="/images/some-by-mi/about/icons/Positioning.svg"
+                      alt=""
+                      width="42"
+                      height="42"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                      aria-hidden="true"
+                    >
+                  </picture>
+                  <h3 class="about-feature__title">
+                    Позиционирование
+                  </h3>
+                  <p class="about-feature__description">
+                    Функциональная косметика для решения реальных проблем кожи: акне, чувствительность, неровный тон.
+                  </p>
+                </div>
+              </li>
+              <!-- 2 -->
+              <li class="about__list-item">
+                <div class="about-feature">
+                  <picture
+                    class="about-feature__icon"
+                    data-wave
+                  >
+                    <img
+                      src="/images/some-by-mi/about/icons/Active ingredients.svg"
+                      alt=""
+                      width="42"
+                      height="42"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                      aria-hidden="true"
+                    >
+                  </picture>
+                  <h3 class="about-feature__title">
+                    Активные компоненты
+                  </h3>
+                  <p class="about-feature__description">
+                    AHA, BHA, PHA, ниацинамид, центелла, пантенол и ретинол.
+                  </p>
+                </div>
+              </li>
+              <!-- 3 -->
+              <li class="about__list-item">
+                <div class="about-feature">
+                  <picture
+                    class="about-feature__icon"
+                    data-wave
+                  >
+                    <img
+                      src="/images/some-by-mi/about/icons/Skin needs.svg"
+                      alt=""
+                      width="42"
+                      height="42"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                      aria-hidden="true"
+                    >
+                  </picture>
+                  <h3 class="about-feature__title">
+                    Для каких задач подходит
+                  </h3>
+                  <p class="about-feature__description">
+                    Очищение и сужение пор, контроль высыпаний, восстановление барьера и увлажнение.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section
+      class="why"
+      id="why"
+    >
+      <div class="why__container u-container">
+        <h2 class="why__title u-title--section">
+          Почему выбирают SOME BY MI
+        </h2>
+        <ul class="why__list">
+          <!-- 1 -->
+          <li
+            class="why__list-item why-item"
+            data-wave
+          >
+            <picture class="why-item__icon">
+              <img
+                src="/images/some-by-mi/why/icons/expert.svg"
+                alt=""
+                width="42"
+                height="42"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+            </picture>
+            <h3 class="why-item__title">
+              Эксперт в уходе за проблемной кожей
+            </h3>
+            <p class="why-item__description">
+              Сбалансированные формулы для сложных состояний кожи
+            </p>
+          </li>
+          <!-- 2 -->
+          <li
+            class="why__list-item why-item"
+            data-wave
+          >
+            <picture class="why-item__icon">
+              <img
+                src="/images/some-by-mi/why/icons/ingredients.svg"
+                alt=""
+                width="42"
+                height="42"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+            </picture>
+            <h3 class="why-item__title">
+              Эффективные активные ингредиенты
+            </h3>
+            <p class="why-item__description">
+              Комбинации ингредиентов с доказанным действием
+            </p>
+          </li>
+          <!-- 3 -->
+          <li
+            class="why__list-item why-item"
+            data-wave
+          >
+            <picture class="why-item__icon">
+              <img
+                src="/images/some-by-mi/why/icons/lines.svg"
+                alt=""
+                width="42"
+                height="42"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+            </picture>
+            <h3 class="why-item__title">
+              Узнаваемые линейки
+            </h3>
+            <p class="why-item__description">
+              Популярные продукты с высокой повторной покупкой
+            </p>
+          </li>
+          <!-- 4 -->
+          <li
+            class="why__list-item why-item"
+            data-wave
+          >
+            <picture class="why-item__icon">
+              <img
+                src="/images/some-by-mi/why/icons/demand.svg"
+                alt=""
+                width="42"
+                height="42"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+            </picture>
+            <h3 class="why-item__title">
+              Высокий спрос
+            </h3>
+            <p class="why-item__description">
+              Устойчивый интерес и узнаваемость на маркетплейсах
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section
+      class="faq"
+      id="faq"
+    >
+      <div class="faq__container u-container">
+        <h2 class="faq__title u-title--section">
+          Часто задаваемые вопросы
+        </h2>
+        <ul class="faq__list">
+          <!-- 1 -->
+          <li
+            class="faq__list-item faq-item"
+            data-wave
+          >
+            <details
+              class="faq-item__details"
+              name="faq"
+            >
+              <summary class="faq-item__summary">
+                Где купить SOME BY MI оптом?
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M0.800049 4.80005L4.80005 0.800049L8.80005 4.80005"
+                    stroke="#16883D"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+            </details>
+            <div class="faq-item__wrapper">
+              <div class="faq-item__body">
+                <p class="faq-item__description">
+                  Оригинальную косметику SOME BY MI оптом можно заказать в KoreaTrade. Мы работаем с юридическими лицами
+                  и ИП, отгружаем товары от 1 штуки, предоставляем сертификаты и организуем доставку по всей России.
+                  Чтобы получить условия и актуальные цены, оставьте заявку на прайс-лист.
+                </p>
+              </div>
+            </div>
+          </li>
+          <!-- 2 -->
+          <li
+            class="faq__list-item faq-item"
+            data-wave
+          >
+            <details
+              class="faq-item__details"
+              name="faq"
+            >
+              <summary class="faq-item__summary">
+                Какие линейки самые популярные?
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M0.800049 4.80005L4.80005 0.800049L8.80005 4.80005"
+                    stroke="#16883D"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+            </details>
+            <div class="faq-item__wrapper">
+              <div class="faq-item__body">
+                <p class="faq-item__description">
+                  Оригинальную косметику SOME BY MI оптом можно заказать в KoreaTrade. Мы работаем с юридическими лицами
+                  и ИП, отгружаем товары от 1 штуки, предоставляем сертификаты и организуем доставку по всей России.
+                  Чтобы получить условия и актуальные цены, оставьте заявку на прайс-лист.
+                </p>
+              </div>
+            </div>
+          </li>
+          <!-- 3 -->
+          <li
+            class="faq__list-item faq-item"
+            data-wave
+          >
+            <details
+              class="faq-item__details"
+              name="faq"
+            >
+              <summary class="faq-item__summary">
+                Есть ли сертификаты?
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M0.800049 4.80005L4.80005 0.800049L8.80005 4.80005"
+                    stroke="#16883D"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+            </details>
+            <div class="faq-item__wrapper">
+              <div class="faq-item__body">
+                <p class="faq-item__description">
+                  Оригинальную косметику SOME BY MI оптом можно заказать в KoreaTrade. Мы работаем с юридическими лицами
+                  и ИП, отгружаем товары от 1 штуки, предоставляем сертификаты и организуем доставку по всей России.
+                  Чтобы получить условия и актуальные цены, оставьте заявку на прайс-лист.
+                </p>
+              </div>
+            </div>
+          </li>
+          <!-- 4 -->
+          <li
+            class="faq__list-item faq-item"
+            data-wave
+          >
+            <details
+              class="faq-item__details"
+              name="faq"
+            >
+              <summary class="faq-item__summary">
+                Как получить оптовый прайс?
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M0.800049 4.80005L4.80005 0.800049L8.80005 4.80005"
+                    stroke="#16883D"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+            </details>
+            <div class="faq-item__wrapper">
+              <div class="faq-item__body">
+                <p class="faq-item__description">
+                  Оригинальную косметику SOME BY MI оптом можно заказать в KoreaTrade. Мы работаем с юридическими лицами
+                  и ИП, отгружаем товары от 1 штуки, предоставляем сертификаты и организуем доставку по всей России.
+                  Чтобы получить условия и актуальные цены, оставьте заявку на прайс-лист.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRICE -->
+    <section
+      class="price"
+      id="price"
+    >
+      <div class="price__container u-container">
+        <div class="price__wrapper">
+          <div class="price__text">
+            <h2 class="price__title u-title--section">
+              Получить оптовый прайс SOME BY MI
+            </h2>
+            <p class="price__description">
+              Оставьте заявку, и мы вышлем актуальный прайс-лист с условиями сотрудничества и ассортиментом.
+            </p>
+            <div class="price__note">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5 7H5.5C4.39543 7 3.5 7.89543 3.5 9V12C3.5 13.1046 4.39543 14 5.5 14H10.5C11.6046 14 12.5 13.1046 12.5 12V9C12.5 7.89543 11.6046 7 10.5 7Z"
+                  stroke="#16883D"
+                  stroke-width="1.2"
+                />
+                <path
+                  d="M5.5 7V5C5.5 4.33696 5.76339 3.70107 6.23223 3.23223C6.70107 2.76339 7.33696 2.5 8 2.5C8.66304 2.5 9.29893 2.76339 9.76777 3.23223C10.2366 3.70107 10.5 4.33696 10.5 5V7M8 10V11.5"
+                  stroke="#16883D"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span>
+                Конфиденциально. Только для бизнеса.
+              </span>
+            </div>
+          </div>
+          <div class="price__form">
+            <form
+              action=""
+              onsubmit="event.preventDefault();"
+              class="price-form"
+            >
+              <div class="price-form__group">
+                <input
+                  type="text"
+                  class="price-form__input"
+                  id="price-name"
+                  name="priceName"
+                  placeholder="Ваше имя"
+                  autocomplete="name"
+                  data-wave
+                >
+              </div>
+              <div class="price-form__group">
+                <input
+                  type="text"
+                  class="price-form__input"
+                  id="price-company"
+                  name="priceCompany"
+                  placeholder="Название компании"
+                  data-wave
+                >
+              </div>
+              <div class="price-form__group">
+                <input
+                  type="text"
+                  class="price-form__input"
+                  id="price-phone"
+                  name="pricePhone"
+                  placeholder="+7 (___) ___-__-__"
+                  autocomplete="mobile"
+                  data-wave
+                >
+              </div>
+              <button
+                class="price-form__submit u-btn--regular"
+                data-wave
+                data-wave-color="rgba(255, 255, 255, 0.4)"
+              >
+                Получить прайс
+              </button>
+              <div class="price-form__checkbox">
+                <input
+                  type="checkbox"
+                  id="price-checkbox"
+                >
+                <label for="price-checkbox">
+                  Я согласен на обработку персональных данных
+                </label>
+              </div>
+            </form>
+            <picture class="price__image">
+              <source
+                media="(max-width:767px)"
+                srcset="/images/common/price/Botanical-leaves--mobile.svg"
+              >
+              <img
+                src="/images/common/price/Botanical leaves.svg"
+                alt=""
+                width="180"
+                height="208"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer
+    class="footer"
+    id="footer"
+  >
+    <div class="footer__container u-container">
+
+      <div class="footer__top">
+        <h2 class="footer__title">
+          Остались вопросы?
+        </h2>
+        <button
+          type="button"
+          class="footer__action u-btn--second"
+        >
+          ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+        </button>
+      </div>
+
+      <div class="footer__main">
+        <div class="footer__columns">
+
+          <div class="footer__column footer-info">
+            <a
+              href="./#footer"
+              class="footer-info__logo"
+            >
+              <img
+                src="/images/common/logo--white.avif"
+                alt="logo"
+                width="185"
+                height="43"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              >
+            </a>
+            <p class="footer-info__description">
+              Оптовый поставщик ведущих корейских брендов в России
+            </p>
+            <ul class="footer-info__socials">
+              <li>
+                <a href="./#footer">
+                  <img
+                    src="/images/common/footer/icons/yt.svg"
+                    alt="youtube"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="./#footer">
+                  <img
+                    src="/images/common/footer/icons/dzen.svg"
+                    alt="dzen"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="./#footer">
+                  <img
+                    src="/images/common/footer/icons/tg.svg"
+                    alt="tg"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="./#footer">
+                  <img
+                    src="/images/common/footer/icons/vk.svg"
+                    alt="vk"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  >
+                </a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="footer-info__action u-btn--second"
+            >
+              ПОЛУЧИТЬ ПРАЙС-ЛИСТ
+            </button>
+          </div>
+          <div class="footer__column footer-dropdown">
+            <details class="footer-dropdown__details">
+              <summary class="footer-dropdown__summary">
+                О нас
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M0.800049 4.80005L4.80005 0.800049L8.80005 4.80005"
+                    stroke="#fff"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+            </details>
+            <div class="footer-dropdown__wrapper">
+              <ul class="footer-dropdown__list">
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    О компании
+                  </a></li>
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    Блог
+                  </a></li>
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    Вакансии
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__column footer-dropdown">
+            <details class="footer-dropdown__details">
+              <summary class="footer-dropdown__summary">
+                Сервис
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M0.800049 4.80005L4.80005 0.800049L8.80005 4.80005"
+                    stroke="#fff"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+            </details>
+            <div class="footer-dropdown__wrapper">
+              <ul class="footer-dropdown__list">
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    Фулфилмент
+                  </a></li>
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    Доставка и оплата
+                  </a></li>
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    Сотрудничество
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__column footer-dropdown">
+            <details class="footer-dropdown__details">
+              <summary class="footer-dropdown__summary">
+                Навигация
+                <svg
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M0.800049 4.80005L4.80005 0.800049L8.80005 4.80005"
+                    stroke="#fff"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </summary>
+            </details>
+            <div class="footer-dropdown__wrapper">
+              <ul class="footer-dropdown__list">
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    Каталог
+                  </a></li>
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    Бренды
+                  </a></li>
+                <li class="footer-dropdown__item"><a
+                    href="./#footer"
+                    class="footer-dropdown__link"
+                  >
+                    Контакты
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__column footer-contacts">
+            <a
+              href="./#footer"
+              class="footer-contacts__phone"
+            >
+              <img
+                src="/images/common/footer/icons/phone.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+              <span>
+                8 (800) 500-67-27
+              </span>
+            </a>
+            <a
+              href="./#footer"
+              class="footer-contacts__phone"
+            >
+              <img
+                src="/images/common/footer/icons/phone.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+              <span>
+                +7 (495) 120-97-00
+              </span>
+            </a>
+            <a
+              href="./#footer"
+              class="footer-contacts__email"
+            >
+              <img
+                src="/images/common/footer/icons/email.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+              <span>
+                info@koreatrade.ru
+              </span>
+            </a>
+            <a
+              href="./#footer"
+              class="footer-contacts__address"
+            >
+              <img
+                src="/images/common/footer/icons/geo.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+              <address>
+                Москва
+                Офис — 2-я Хуторская улица, 38А, стр. 9
+                Склад — ул. Руставели, 14, стр. 12
+              </address>
+            </a>
+            <a
+              href="./#footer"
+              class="footer-contacts__address"
+            >
+              <img
+                src="/images/common/footer/icons/geo.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                aria-hidden="true"
+              >
+              <address>
+                Нижний Новгород
+                Офис — ул. Тимирязева, 39
+                Склад — ул. Чаадаева, 51
+              </address>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          Кореа трейд © 2015–2026. Все права защищены.
+        </p>
+        <a
+          href="./#footer"
+          class="footer__policy"
+        >
+          Политика конфиденциальности
+        </a>
+      </div>
+
+    </div>
+  </footer>
 
   <script
     type="module"

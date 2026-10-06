@@ -2,7 +2,7 @@
 
 .catalog {
     padding-block: rem(48) rem(68);
-    background: #f8faf9;
+    // background: #f8faf9;
 
     &__container {
     }
@@ -739,7 +739,7 @@
 
     .sort-dropdown {
         width: 100%;
-        min-height: 55dvh;
+        min-height: 45dvh;
         padding: rem(40) rem(20);
         border-radius: rem(22) rem(22) 0 0;
         display: flex;
@@ -754,6 +754,18 @@
         transition:
             translate 0.2s ease-out,
             box-shadow 0s ease-out 0.19s;
+
+        &:before {
+            content: "";
+            width: rem(44);
+            height: rem(4);
+            border-radius: rem(2);
+            background-color: #c4d0c7;
+            position: absolute;
+            top: rem(16);
+            left: 50%;
+            translate: -50% 0;
+        }
 
         &:has(.sort-dropdown__details[open]) {
             translate: 0 0;

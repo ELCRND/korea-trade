@@ -4,7 +4,15 @@
 @use "utils";
 @use "globals";
 
+@use "blocks/common/header";
+
 @use "blocks/common/hero";
 @use "blocks/common/features";
 @use "blocks/some-by-mi/lines";
 @use "blocks/some-by-mi/catalog";
+@use "blocks/some-by-mi/about";
+@use "blocks/some-by-mi/why";
+@use "blocks/some-by-mi/faq";
+@use "blocks/common/price";
+
+@use "blocks/common/footer";

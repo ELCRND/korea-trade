@@ -15,6 +15,11 @@ html {
   @include mobile {
     font-size: 16px;
   }
+
+  &:has(.header-menu.is-open) {
+    max-height: 100dvh;
+    overflow: hidden;
+  }
 }
 
 body {
@@ -22,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-family);
-  background: #fff;
+  background: #fafafa;
   color: var(--color-gray);
   position: relative;
   line-height: 140%;
@@ -63,6 +68,11 @@ svg * {
   transition-duration: var(--transition-duration);
 }
 
+section,
+footer {
+  scroll-margin-top: 40px;
+}
+
 a {
   color: inherit;
 
@@ -80,7 +90,7 @@ img {
 }
 
 *:focus-visible {
-  outline: rem(2) solid var(--color-green--light) !important;
+  outline: rem(2) solid #00368c !important;
   outline-offset: rem(4);
 }
 

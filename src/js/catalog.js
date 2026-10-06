@@ -606,7 +606,7 @@ let isSwiping = false;
 
 // Порог в пикселях, после которого модалка закроется
 const sortModal = sortDropdown.parentElement;
-const SWIPE_THRESHOLD = 150;
+const SWIPE_THRESHOLD = 60;
 
 sortModal.addEventListener("touchstart", (e) => {
   console.log(1);

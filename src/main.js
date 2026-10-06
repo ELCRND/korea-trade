@@ -1,6 +1,23 @@
 import { renderProducts } from "./js/catalog";
 import "./scss/main.scss";
 document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".header-menu");
+  const menuOpen = document.querySelector(".header-menu-open");
+
+  menuOpen.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("is-open");
+    menuOpen.classList.toggle("is-open");
+    menuOpen.setAttribute("aria-expanded", isOpen);
+  });
+
+  menu.querySelectorAll("a, .header__action").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("is-open");
+      menuOpen.classList.remove("is-open");
+      menuOpen.setAttribute("aria-expanded", "false");
+    });
+  });
+
   renderProducts();
 
   const elements = document.querySelectorAll("[data-wave]");

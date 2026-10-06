@@ -1,0 +1,125 @@
+@use "@/scss/helpers" as *;
+
+.why {
+    padding-block: rem(48);
+
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__list {
+        margin-top: rem(20);
+        display: flex;
+        gap: rem(16);
+
+        &-item {
+            flex: 1 1 auto;
+        }
+    }
+}
+
+.why-item {
+    padding: rem(18);
+    border: rem(1) solid #e1e9e3;
+    border-radius: rem(16);
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+
+    &:nth-of-type(1) {
+        background: #eef7f1;
+        box-shadow: rem(0) rem(0) rem(12) rem(0) #cae4d3 inset;
+
+        .why-item__icon {
+            background: #ccebd7;
+        }
+    }
+    &:nth-of-type(2) {
+        background: #eef4fa;
+        box-shadow: rem(0) rem(0) rem(12) rem(0) #c9d6e4 inset;
+
+        .why-item__icon {
+            background: #cee0f3;
+        }
+    }
+    &:nth-of-type(3) {
+        background: #f6eff8;
+        box-shadow: rem(0) rem(0) rem(12) rem(0) #e7d8eb inset;
+
+        .why-item__icon {
+            background: #ecdcf1;
+        }
+    }
+    &:nth-of-type(4) {
+        background: #fff7e7;
+        box-shadow: rem(0) rem(0) rem(12) rem(0) #e9e2d3 inset;
+
+        .why-item__icon {
+            background: #f7e9d0;
+        }
+    }
+
+    &__icon {
+        width: rem(42);
+        height: rem(42);
+        // background-color: #dff1e3;
+        border-radius: 50%;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: rem(14);
+        color: var(--color-black);
+    }
+
+    &__description {
+        font-size: rem(12);
+        line-height: 150%;
+        color: var(--color-black--light);
+    }
+}
+
+@include mobile {
+    .why {
+        padding-block: rem(48);
+
+        &__container {
+        }
+
+        &__title {
+        }
+
+        &__list {
+            margin-top: rem(16);
+            gap: rem(12);
+            flex-direction: column;
+
+            &-item {
+            }
+        }
+    }
+
+    .why-item {
+        &:nth-of-type(1) {
+        }
+        &:nth-of-type(2) {
+        }
+        &:nth-of-type(3) {
+        }
+        &:nth-of-type(4) {
+        }
+
+        &__icon {
+        }
+
+        &__title {
+            font-size: rem(15);
+        }
+
+        &__description {
+            font-size: rem(13);
+        }
+    }
+}

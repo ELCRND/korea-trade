@@ -1,0 +1,101 @@
+@use "@/scss/helpers" as *;
+
+.faq {
+    padding-block: rem(48);
+    background: #f7faf8;
+
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__list {
+        margin-top: rem(14);
+        display: flex;
+        flex-direction: column;
+        gap: rem(14);
+
+        &-item {
+        }
+    }
+}
+
+.faq-item {
+    padding: rem(18);
+    border: rem(1) solid #e1e9e3;
+    border-radius: rem(14);
+    background-color: #fff;
+    position: relative;
+    z-index: 0;
+
+    &:has(.faq-item__details[open]) {
+        background-color: #e4f5e7;
+        box-shadow: rem(0) rem(0) rem(12) rem(3) #cae4d3 inset;
+
+        .wave {
+            opacity: 0.6;
+        }
+    }
+
+    .wave {
+        opacity: 0;
+        animation: wave-animation 2s ease-out forwards;
+    }
+
+    &__details {
+        &[open] {
+            .faq-item__summary {
+                svg {
+                    scale: 1 -1;
+                }
+            }
+
+            + .faq-item__wrapper {
+                grid-template-rows: 1fr;
+            }
+        }
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: rem(14);
+        color: var(--color-black);
+        list-style-type: none;
+        z-index: 0;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+
+        svg {
+            width: rem(12);
+            transition: scale 0.2s ease-out;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.2s ease-out;
+    }
+
+    &__body {
+        overflow: hidden;
+    }
+
+    &__description {
+        max-width: 150ch;
+        margin-top: rem(10);
+        font-size: rem(13);
+        line-height: 154%;
+        color: var(--color-black--light);
+    }
+}
