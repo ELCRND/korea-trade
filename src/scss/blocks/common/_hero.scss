@@ -64,13 +64,17 @@
 
     &__image {
         flex: 0 1 46.9%;
+        display: block;
         border-radius: rem(18);
         box-shadow: rem(-4) rem(10) rem(22) 0 rgba(5, 31, 15, 0.22);
 
         picture {
+            display: block;
             width: rem(630);
-            border-radius: rem(18);
-            overflow: hidden;
+            // overflow: hidden;
+            img {
+                border-radius: rem(18);
+            }
         }
     }
 }
