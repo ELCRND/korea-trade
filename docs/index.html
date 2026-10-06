@@ -13,16 +13,6 @@
     content="width=device-width, initial-scale=1.0"
   />
   <title>SOME BY MI</title>
-  <script
-    type="module"
-    crossorigin
-    src="./assets/main.js"
-  ></script>
-  <link
-    rel="stylesheet"
-    crossorigin
-    href="./assets/style-D6bDw0r7.css"
-  >
 
   <style>
     *,
@@ -783,6 +773,16 @@
     }
   </style>
 
+  <script
+    type="module"
+    crossorigin
+    src="./assets/main.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    crossorigin
+    href="./assets/style-D6bDw0r7.css"
+  >
 </head>
 
 <body>
@@ -867,6 +867,7 @@
         action=""
         onsubmit="event.preventDefault();"
         class="header__search"
+        id="header-search"
       >
         <label
           for="search-checkbox"
@@ -903,6 +904,9 @@
             <input
               type="search"
               class="header__search-input"
+              name="search-input"
+              id="search-input"
+              form="header-search"
             >
           </div>
         </div>
