@@ -344,18 +344,15 @@
         position: absolute;
         left: 0;
         top: rem(64);
-        opacity: 0;
         scale: 1 0;
         transform-origin: top;
         filter: blur(4px);
 
         transition:
             scale 0s ease-out 0.2s,
-            filter 0.2s ease-out 0.2s,
-            opacity 0.2s ease-out 0.07s;
+            filter 0.2s ease-out;
 
         &.is-open {
-            opacity: 1;
             scale: 1 1;
             filter: blur(0px);
             transition:
