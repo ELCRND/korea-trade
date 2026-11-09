@@ -144,9 +144,12 @@
       overflow-x: hidden;
     }
 
-    body:has(.sort-dropdown__details[open]) {
-      overflow: hidden;
+    @media (width<=47.9988rem) {
+      body:has(.sort-dropdown__details[open]) {
+        overflow: hidden;
+      }
     }
+
 
     p {
       line-height: 140%;
@@ -510,9 +513,11 @@
         top: 4rem;
         left: 0;
         scale: 1 0;
+        opacity: 0;
       }
 
       .header-menu.is-open {
+        opacity: 1;
         filter: blur();
         transition:
           scale 0.2s ease-out 70ms,
@@ -776,6 +781,7 @@
       }
     }
   </style>
+
 
   <script
     type="module"

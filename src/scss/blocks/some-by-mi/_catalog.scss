@@ -31,6 +31,9 @@
         }
         &-close {
         }
+
+        &-bottom {
+        }
     }
 
     &__reset {
@@ -60,7 +63,7 @@
     }
 
     &__grid {
-        max-height: rem(776);
+        // max-height: rem(776);
         margin-top: rem(18);
         padding-left: rem(24);
         padding-bottom: rem(22);
@@ -239,6 +242,7 @@
 
 .sort-dropdown {
     position: relative;
+    z-index: 2;
 
     &__details {
         &[open] {
@@ -538,12 +542,14 @@
             opacity: 0;
             transition: opacity 0.1s ease-out;
             visibility: hidden;
+            scale: 0;
 
             &::-webkit-scrollbar {
                 display: none;
             }
 
             &--open {
+                scale: 1;
                 opacity: 1;
                 visibility: visible;
             }
@@ -751,6 +757,7 @@
         background-color: #fff;
         translate: 0 100%;
         visibility: hidden;
+        scale: 0;
         transition:
             translate 0.2s ease-out,
             box-shadow 0s ease-out 0.19s;
@@ -768,6 +775,7 @@
         }
 
         &:has(.sort-dropdown__details[open]) {
+            scale: 1;
             translate: 0 0;
             visibility: visible;
             box-shadow: 0 0 0 100dvh rgba(2, 10, 16, 0.28);

@@ -1,6 +1,7 @@
 @use "@/scss/helpers" as *;
 
 .hero {
+    scroll-margin-top: -40px;
     padding-block: rem(72) rem(60);
     background: linear-gradient(90deg, #fff 0%, #eaf5ec 50% 100%);
 
@@ -81,7 +82,7 @@
 
 @include mobile {
     .hero {
-        padding-block: rem(64) rem(32);
+        padding-block: rem(84) rem(32);
         background: linear-gradient(90deg, #fff 0%, #f8fff9 50% 100%);
 
         &__container {

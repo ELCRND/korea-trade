@@ -124,7 +124,7 @@
             }
 
             &-item {
-                flex: 0 0 92.5vw;
+                flex: 0 0 min(400px, 91vw);
                 scroll-snap-align: center;
 
                 &:nth-of-type(1) {

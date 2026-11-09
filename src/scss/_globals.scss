@@ -32,8 +32,10 @@ body {
   position: relative;
   line-height: 140%;
 
-  &:has(.sort-dropdown__details[open]) {
-    overflow: hidden;
+  @include mobile {
+    &:has(.sort-dropdown__details[open]) {
+      overflow: hidden;
+    }
   }
 
   // &::-webkit-scrollbar-thumb {
